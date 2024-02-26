@@ -8,7 +8,7 @@
 }
 
 body {
-    background: #aaa;
+    background: #eee;
     font-family: Arial, sans-serif;
     display: flex;
     margin: 0;
@@ -61,4 +61,82 @@ header {
 
 main {
     width: 66vw;
+    margin-top: 30px;
+}
+
+main > p {
+    margin: 40px;
+    width: 51ch;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.signup-form {
+    background-color: white;
+    margin-top: 40px;
+    padding: 40px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    max-width: 800px;
+}
+
+.signup-form > p {
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.signup-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.signup-container > label {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.signup-container span {
+    font-size: 0.6em;
+    letter-spacing: 1px;
+}
+
+.signup-container input {
+    height: 2em;
+    padding: 10px 5px;
+}
+
+.signup-container input:focus {
+    border: 1px solid blue;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+#create-account-btn {
+    margin: 30px 40px;
+    background-color: #596D48;
+    padding: 15px 40px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+main a,
+main a:link,
+main a:visited {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error::after {
+    content: '* Passwords do not match';
+    color: red;
+    font-size: 0.7em;
 }

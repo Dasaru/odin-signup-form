@@ -20,30 +20,43 @@
         your deepest dreams. Sign up <em>now</em> to get started.</p>
     <p>You <em>know</em> you want to.</p>
 
-    <form method="POST" action="#">
+    <form class="signup-form" method="POST" action="#">
         <p>Let's do this!</p>
-        <div>
-            <label for="fname">FIRST NAME</label>
-            <input id="fname" name="fname" type="text">
+        <div class="signup-container">
+            <label for="fname">
+                <span>FIRST NAME</span>
+                <input id="fname" name="fname" type="text">
+            </label>
+        
+            <label for="lname">
+                <span>LAST NAME</span>
+                <input id="lname" name="lname" type="text">
+            </label>
 
-            <label for="lname">LAST NAME</label>
-            <input id="lname" name="lname" type="text">
+            <label for="email">
+                <span>EMAIL</span>
+                <input id="email" name="email" type="email">
+            </label>
 
-            <label for="email">EMAIL</label>
-            <input id="email" name="email" type="email">
+            <label for="phone">
+                <span>PHONE NUMBER</span>
+                <input id="phone" name="phone" type="tel">
+            </label>
 
-            <label for="phone">PHONE NUMBER</label>
-            <input id="phone" name="phone" type="tel">
+            <label for="password">
+                <span>PASSWORD</span>
+                <input id="password" class="error" name="password" type="password">
+            </label>
 
-            <label for="password">PASSWORD</label>
-            <input id="password" name="password" type="password">
-
-            <label for="confirm-pass">CONFIRM PASSWORD</label>
-            <input id="confirm-pass" name="confirm-pass" type="password">
+            <label for="confirm-pass">
+                <span>CONFIRM PASSWORD</span>
+                <input id="confirm-pass" class="error" name="confirm-pass" type="password">
+            </label>
         </div>
+        <button id="submit" type="submit" hidden></button>
     </form>
 
-    <button>Create Account</button>
+    <button id="create-account-btn">Create Account</button>
     <p>Already have an account? <a href="#">Log in</a></p>
 </main>
 
