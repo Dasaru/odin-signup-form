@@ -1,3 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url("fonts/Norse-Bold.otf");
+}
+
 body {
     background: #aaa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+.logo-img,
+.bg-img {
+    width: 100px;
+}
+
+header {
+    width: 34vw;
+    background-image: url("images/leaves.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Norse-Bold';
+    margin-top: 33%;
+    padding: 10px;
+    color: white;
+}
+
+.logo-footer {
+    font-size: 1rem;
+    color: white;
+    align-self: center;
+}
+
+.logo-footer a,
+.logo-footer a:link,
+.logo-footer a:active,
+.logo-footer a:visited {
+    color: white;
+}
+
+.logo-footer a:hover {
+    color: yellow;
+}
+
+main {
+    width: 66vw;
 }
